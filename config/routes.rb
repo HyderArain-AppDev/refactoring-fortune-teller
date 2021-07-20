@@ -50,4 +50,6 @@ Rails.application.routes.draw do
   get("/roll/1/20", { :controller => "dice", :action => "one_twenty" })
   get("/roll/2/20", { :controller => "dice", :action => "two_twenty" })
   get("/roll/3/20", { :controller => "dice", :action => "three_twenty" })
+
+  get("/roll/:num_dice/:num_sides", { :controller => "dice", :action => "inf" })
 end
